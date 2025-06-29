@@ -1,0 +1,162 @@
+body {
+  margin: 25px;
+  height: 100%;
+  background-color: rgb(22, 65, 122);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.main-nav .nav-on-left,
+.nav-on-right {
+  list-style: none;
+  margin: 5px 0px;
+  padding: 0;
+}
+
+.main-nav ul.nav-on-left,
+.main-nav ul.nav-on-right {
+  display: flex;
+  gap: 8px; /* controls horizontal spacing for every button */
+}
+
+.main-nav li:not(.search-li) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: rgb(22, 65, 122);
+  border: solid black 3px;
+  padding: 7px;
+  margin: 5px;
+  color: burlywood;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+  transform: scale(1);
+}
+
+.main-nav li:not(.search-li):hover {
+  background-color: rgb(40, 90, 160);
+  cursor: pointer;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav .search-form {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.main-nav .search-form input {
+  border: 2px solid black;
+  padding: 4px 6px;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Responsive Nav Only */
+.search-form .search-btn {
+  width: auto; /* let it shrink to fit the icon */
+  height: 40px; /* match the square height       */
+  padding: 0 10px; /* keep enough space left/right  */
+  border-left: 0; /* flush with the input field    */
+  border-radius: 0 4px 4px 0; /* only round the right corners  */
+}
+
+/* ===  common “button‑icon” skin  ===================================== */
+.btn-icon {
+  /* common look … */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px; /* <- new: fixed box, tweak to taste */
+  height: 40px; /*    keep square so every glyph sits the same */
+  font-size: 20px;
+
+  background: rgb(22, 65, 122);
+  color: burlywood;
+  border: 3px solid black;
+
+  /* remove individual margin — we’ll rely on flex gap */
+  margin: 0;
+  padding: 0;
+
+  transition: 0.3s background-color, 0.2s transform, 0.2s box-shadow;
+}
+
+.btn-icon:hover {
+  background: rgb(40, 90, 160);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+/* only inside the navbar ─ keep vertical margin (top/bottom) if you like */
+.main-nav .btn-icon {
+  margin: 0; /* rely on flex gap instead */
+}
+
+.sub-heading {
+  max-width: 50%;
+  color: burlywood;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: rgb(22, 65, 122);
+}
+.main-recents {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.individual-recents {
+  flex: 0 0 calc(25% - 12px); /* 4 per row ‑ the gap you set above     */
+  max-width: 300px; /* ceiling, so they don’t get gigantic   */
+  height: px;
+
+  border: 3px solid black;
+  box-sizing: border-box; /* ensures border is inside that 25 %    */
+}
+
+.individual-recents img {
+  margin: 3px;
+}
+.elements-in-recents {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+}
+.elements-in-recents li:last-child {
+  margin-left: auto;
+  margin-right: 5px;
+  padding: 5px;
+  border: solid black 3px;
+  color: burlywood;
+  background-color: rgb(22, 65, 122);
+}
