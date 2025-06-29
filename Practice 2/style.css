@@ -1,15 +1,16 @@
 body {
-  min-height: 100vh;
-
   margin: 0;
   background-color: bisque;
+}
+.layout-structure {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 250px 1fr 250px;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   grid-template-areas:
     "navbar navbar navbar"
     "left-sidebar main-content right-sidebar "
-    "left-sidebar footer right-sidebar";
+    "footer footer footer";
 }
 p {
   font-size: 50px;
@@ -19,25 +20,33 @@ ul {
   padding: 0;
 }
 nav {
+  top: 0;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: navbar;
   border: solid black 3px;
-  height: 70px;
+  max-height: 70px;
+  background-color: aqua;
 }
 .left-sidebar {
   position: sticky;
-  top: 0%;
+  height: calc(100vh - 74.8px - 74.8px);
+  top: 74.8px;
+  align-self: start;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: left-sidebar;
   border: solid red 3px;
+  background-color: blueviolet;
 }
 .right-sidebar {
   position: sticky;
-  top: 0%;
+  height: calc(100vh - 74.8px - 74.8px);
+  top: 74.8px;
+  align-self: start;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,9 +61,13 @@ main {
   border: solid white 3px;
 }
 footer {
+  position: sticky;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: footer;
+  height: 70px;
   border: solid blue 3px;
+  background-color: azure;
 }
