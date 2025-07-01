@@ -1,0 +1,15 @@
+/* vars.css */
+
+:root {
+  font-size: 10px;
+  --bar-h: 7rem;
+  --side-w: 25rem;  
+}
+body {
+  margin: 0;
+  background-color: bisque;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}

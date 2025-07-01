@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KanishkFy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="vars.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="left-sidebar.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div class="layout-structure">
+      <!--Nav Bar -->
+      <nav class="main-nav">
+        <ul class="elements-in-navbar">
+          <li class="button-icon button-three-dots">
+            <i class="fi fi-rr-menu-dots-vertical"></i>
+          </li>
+
+          <li class="button-icon button-angle-left">
+            <i class="fi fi-rr-angle-left"></i>
+          </li>
+
+          <li class="button-icon button-home">
+            <i class="fi fi-rr-home"></i>
+          </li>
+
+          <li class="button-searchbar">
+            <form class="elements-in-form">
+              <label id="search-icon" class="button-icon" for=" search-music"
+                ><i class="fi fi-rr-search"></i
+              ></label>
+              <input type="search" id="search-bar" placeholder="Search..." />
+              <button type="submit" id="cross-searchbar" class="button-icon">
+                <i class="fi fi-rr-cross"></i>
+              </button>
+            </form>
+          </li>
+
+          <li class="button-icon right">
+            <i class="fi fi-rr-bell"></i>
+          </li>
+
+          <li class="button-icon right">
+            <i class="fi fi-rr-user"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Left Side Bar -->
+
+      <aside class="left-sidebar">
+        <p>Left sidebar</p>
+      </aside>
+
+      <!--Left Side Bar-->
+      <main>
+        <p>Main</p>
+      </main>
+      <aside class="right-sidebar">
+        <p>right sidebar</p>
+      </aside>
+
+      <!--Footer-->
+      <footer>
+        <ul class="elements-in-footer">
+          <li>
+            <img src="Images/StarryNight.jpg" width="50px" height="50px" />
+          </li>
+          <li>
+            <div>
+              <p class="song-name"><b>Starry Night</b></p>
+              <p class="artist-name">Vincent van Gogh</p>
+            </div>
+          </li>
+          <li><i id="add-to-playlist-icon" class="fi fi-rr-plus-small"></i></li>
+
+          <li id="mid-footer">
+            <div>
+              <ul class="footer-nav-button-over-progress-bar">
+                <li>
+                  <i id="shuffle-icon" class="fi fi-rr-shuffle"></i>
+                </li>
+                <li><i class="fi fi-rr-step-backward"></i></li>
+                <li><i class="fi fi-rr-play-circle"></i></li>
+                <li><i class="fi fi-rr-step-forward"></i></li>
+                <li id="footer-repeat-icon">
+                  <i class="fi fi-rr-arrows-repeat"></i>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <progress value="70" max="100"></progress>
+            </div>
+          </li>
+
+          <li><i class="fi fi-rr-microphone-alt"></i></li>
+          <li><i class="fi fi-rr-list"></i></li>
+          <li><i class="fi fi-rr-devices"></i></li>
+          <li><i class="fi fi-rr-volume"></i></li>
+          <li id="music-level">
+            <progress value="70" max="100" style="width: 50px"></progress>
+          </li>
+          <li><i class="fi fi-rr-expand"></i></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
