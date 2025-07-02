@@ -4,7 +4,7 @@
   align-items: center;
   border: solid rgb(0, 0, 0) 0.3rem;
   height: var(--bar-h);
-  background-color: burlywood;
+  background-color: #9893da;
 }
 .elements-in-navbar {
   list-style: none;
@@ -19,6 +19,7 @@
   border: solid black 0.3rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  background-color: #bbbdf6;
 }
 .button-home {
   margin-left: auto;
@@ -28,6 +29,8 @@
 }
 #search-icon {
   border: none;
+  background-color: #9893da;
+  
 }
 .button-searchbar .elements-in-form {
   border: solid black 0.3rem;

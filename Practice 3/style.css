@@ -9,6 +9,7 @@
     "navbar navbar navbar"
     "left-sidebar main-content right-sidebar "
     "footer footer footer";
+     font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -19,14 +20,15 @@ nav {
 
 .left-sidebar {
   position: sticky;
-  min-height: calc(100vh - var(--bar-h) - var(--bar-h));
+  height: calc(100vh - var(--bar-h) - var(--footer-h));
   top: var(--bar-h);
+  overflow-y: auto;
   align-self: start;
   grid-area: left-sidebar;
 }
 .right-sidebar {
   position: sticky;
-  min-height: calc(100vh - var(--bar-h) - var(--bar-h));
+  min-height: calc(100vh - var(--bar-h) - var(--footer-h));
   top: var(--bar-h);
   align-self: start;
   display: flex;
@@ -47,6 +49,6 @@ footer {
   bottom: 0;
   
   grid-area: footer;
-  height: var(--bar-h);
+  height: var(--footer-h);
  
 }
