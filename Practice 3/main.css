@@ -1,0 +1,18 @@
+/* Main  */
+.main-content {
+  padding: 10px;
+  
+}
+
+.main-content-columns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1.3rem;
+  margin-top: 2rem;  
+}
+.main-content-columns-individual p{
+text-align: center;
+font-size: 1.5rem;
+}

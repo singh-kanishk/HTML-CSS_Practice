@@ -1,0 +1,32 @@
+.right-sidebar{
+    border: solid black 3px;
+    padding: 1rem;
+}
+.right-sidebar-queue-or-recently-played{
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.right-sidebar-queue-element{
+    list-style: none;
+    display: flex;
+    
+    
+   
+    /* padding: 3px; */
+    margin: 0.5rem;
+}
+.right-sidebar-queue{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    
+}
+.right-sidebar-music-detail p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}

@@ -9,7 +9,7 @@
     "navbar navbar navbar"
     "left-sidebar main-content right-sidebar "
     "footer footer footer";
-     font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -28,27 +28,19 @@ nav {
 }
 .right-sidebar {
   position: sticky;
-  min-height: calc(100vh - var(--bar-h) - var(--footer-h));
+  height: calc(100vh - var(--bar-h) - var(--footer-h));
   top: var(--bar-h);
+  overflow-y: auto;
   align-self: start;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-area: right-sidebar;
-  border: solid red 0.3rem;
 }
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   grid-area: main-content;
-  border: solid white 0.3rem;
 }
 footer {
   position: sticky;
   bottom: 0;
-  
+
   grid-area: footer;
   height: var(--footer-h);
- 
 }
